@@ -55,13 +55,13 @@ class people:
     love = 100
 
 class birthday_girl(people):
-    satiety = 100  # бо сьогодні буде торт 🎂
+    satiety = 100
     dreams = "здійснюються"
-    mood = "найкраще ✨"
+    mood = "найкраще "
 
 inka = birthday_girl()
 
-print("З Днем народження, Інко! 🎉")
+print("З Днем народження, Інко!")
 print("Рівень щастя:", inka.happiness)
 print("Рівень здоров'я:", inka.health)
 print("Настрій сьогодні:", inka.mood)
