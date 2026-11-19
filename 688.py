@@ -25,26 +25,43 @@
 
 #input()
 
-class Animal:
-    satiety = 60
-    energy = 50
-    mood = 50
+#class Animal:
+    #satiety = 60
+    #energy = 50
+    #mood = 50
 
-class Cat(Animal):
-    mood = 80
-    def action(self):
-        if self.satiety < 30:
-            print("Котик голодний, йде їсти!")
-            self.satiety += 40
-        else:
-            print("Котик ситий і грається!")
-            self.energy -= 20
+#class Cat(Animal):
+    #mood = 80
+    #def action(self):
+        #if self.satiety < 30:
+            #print("Котик голодний, йде їсти!")
+            #self.satiety += 40
+        #else:
+            #print("Котик ситий і грається!")
+            #self.energy -= 20
 
-class Dog(Animal):
-    energy = 90
+#class Dog(Animal):
+    #energy = 90
 
-barsik = Cat()
-tapok = Dog()
+#barsik = Cat()
+#tapok = Dog()
 
-print(barsik.satiety)
-print(tapok.satiety)
+#print(barsik.satiety)
+#print(tapok.satiety)
+
+class people:
+    happiness = 100
+    health = 100
+    love = 100
+
+class birthday_girl(people):
+    satiety = 100  # бо сьогодні буде торт 🎂
+    dreams = "здійснюються"
+    mood = "найкраще ✨"
+
+inka = birthday_girl()
+
+print("З Днем народження, Інко! 🎉")
+print("Рівень щастя:", inka.happiness)
+print("Рівень здоров'я:", inka.health)
+print("Настрій сьогодні:", inka.mood)
