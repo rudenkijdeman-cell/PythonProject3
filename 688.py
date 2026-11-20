@@ -49,19 +49,46 @@
 #print(barsik.satiety)
 #print(tapok.satiety)
 
-class people:
-    happiness = 100
-    health = 100
-    love = 100
+#class people:
+    #happiness = 100
+    #health = 100
+    #love = 100
 
-class birthday_girl(people):
-    satiety = 100
-    dreams = "здійснюються"
-    mood = "найкраще "
+#class birthday_girl(people):
+    #satiety = 100
+    #dreams = "здійснюються"
+    #mood = "найкраще "
 
-inka = birthday_girl()
+#inka = birthday_girl()
 
-print("З Днем народження, Інко!")
-print("Рівень щастя:", inka.happiness)
-print("Рівень здоров'я:", inka.health)
-print("Настрій сьогодні:", inka.mood)
+#print("З Днем народження, Інко!")
+#print("Рівень щастя:", inka.happiness)
+#print("Рівень здоров'я:", inka.health)
+#print("Настрій сьогодні:", inka.mood)
+import random
+
+class Encryptor:
+    def __init__(self, a, b):
+        self.__a = a
+        self.__b = b
+
+    def __secret_math(self):
+        op = random.randint(1, 3)
+        if op == 1:
+            return self.__a + self.__b
+        if op == 2:
+            return self.__a - self.__b
+        if op == 3:
+            return self.__a * self.__b
+
+    def __str__(self):
+        return str(self.__secret_math())
+
+# Введення даних з клавіатури
+num1 = int(input("Введіть перше число: "))
+num2 = int(input("Введіть друге число: "))
+
+obj = Encryptor(num1, num2)
+print("Результат:", obj)
+
+#print(obj.__a)#тут є захист програми
